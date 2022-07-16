@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3C27918-53A0-45FD-8CAB-2B9B631626FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Purchesed</RootNamespace>
+    <AssemblyName>Purchesed</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v13.2.Win, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v13.2.UI, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v13.2.Win, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpellChecker.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TsMultiLineComboBox">
+      <HintPath>C:\Users\MD.AL AMIN\Desktop\TsMultiLineComboBox1_04\bin\TsMultiLineComboBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\Menucs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\Menucs.Designer.cs">
+      <DependentUpon>Menucs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Setting\Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Setting\Color.Designer.cs">
+      <DependentUpon>Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Setting\CurrencyExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Setting\CurrencyExchange.Designer.cs">
+      <DependentUpon>CurrencyExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\Deshboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\Deshboard.Designer.cs">
+      <DependentUpon>Deshboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryInformation.Designer.cs">
+      <DependentUpon>FactoryInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryList.Designer.cs">
+      <DependentUpon>FactoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryMaterialOrderRequestcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryMaterialOrderRequestcs.Designer.cs">
+      <DependentUpon>FactoryMaterialOrderRequestcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryTrimeOrderRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryTrimeOrderRequest.Designer.cs">
+      <DependentUpon>FactoryTrimeOrderRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryTrimeOrderRequestList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\FactoryTrimeOrderRequestList.Designer.cs">
+      <DependentUpon>FactoryTrimeOrderRequestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\LOG IN .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\LOG IN .Designer.cs">
+      <DependentUpon>LOG IN .cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Metarial\MetarialQuotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Metarial\MetarialQuotation.Designer.cs">
+      <DependentUpon>MetarialQuotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Metarial\MetarialQuotationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Metarial\MetarialQuotationList.Designer.cs">
+      <DependentUpon>MetarialQuotationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Metarial\Metarials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Metarial\Metarials.Designer.cs">
+      <DependentUpon>Metarials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Metarial\MetarialSuplierInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Metarial\MetarialSuplierInformation.Designer.cs">
+      <DependentUpon>MetarialSuplierInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Setting\Origien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Setting\Origien.Designer.cs">
+      <DependentUpon>Origien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Common\SuplierDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Common\SuplierDelete.Designer.cs">
+      <DependentUpon>SuplierDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeLab.Designer.cs">
+      <DependentUpon>TrimeLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimePurches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimePurches.Designer.cs">
+      <DependentUpon>TrimePurches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeQuotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeQuotation.Designer.cs">
+      <DependentUpon>TrimeQuotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeQuotationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeQuotationList.Designer.cs">
+      <DependentUpon>TrimeQuotationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\Trimes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\Trimes.Designer.cs">
+      <DependentUpon>Trimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSampleRecive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSampleRecive.Designer.cs">
+      <DependentUpon>TrimeSampleRecive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSampleRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSampleRequest.Designer.cs">
+      <DependentUpon>TrimeSampleRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSuplierInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSuplierInformation.Designer.cs">
+      <DependentUpon>TrimeSuplierInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSuplierList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Trime\TrimeSuplierList.Designer.cs">
+      <DependentUpon>TrimeSuplierList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\Setting\Unite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\Setting\Unite.Designer.cs">
+      <DependentUpon>Unite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GermentsDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GermentsDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\AddressReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\AddressReport.Designer.cs">
+      <DependentUpon>AddressReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DevForm\Common\Menucs.resx">
+      <DependentUpon>Menucs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="DevForm\Setting\Color.resx">
+      <DependentUpon>Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Setting\CurrencyExchange.resx">
+      <DependentUpon>CurrencyExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\Deshboard.resx">
+      <DependentUpon>Deshboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\FactoryInformation.resx">
+      <DependentUpon>FactoryInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\FactoryList.resx">
+      <DependentUpon>FactoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\FactoryMaterialOrderRequestcs.resx">
+      <DependentUpon>FactoryMaterialOrderRequestcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\FactoryTrimeOrderRequest.resx">
+      <DependentUpon>FactoryTrimeOrderRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\FactoryTrimeOrderRequestList.resx">
+      <DependentUpon>FactoryTrimeOrderRequestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\LOG IN .resx">
+      <DependentUpon>LOG IN .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Metarial\MetarialQuotation.resx">
+      <DependentUpon>MetarialQuotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Metarial\MetarialQuotationList.resx">
+      <DependentUpon>MetarialQuotationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Metarial\Metarials.resx">
+      <DependentUpon>Metarials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Metarial\MetarialSuplierInformation.resx">
+      <DependentUpon>MetarialSuplierInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Setting\Origien.resx">
+      <DependentUpon>Origien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Common\SuplierDelete.resx">
+      <DependentUpon>SuplierDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimeLab.resx">
+      <DependentUpon>TrimeLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimePurches.resx">
+      <DependentUpon>TrimePurches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimeQuotation.resx">
+      <DependentUpon>TrimeQuotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimeQuotationList.resx">
+      <DependentUpon>TrimeQuotationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\Trimes.resx">
+      <DependentUpon>Trimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimeSampleRecive.resx">
+      <DependentUpon>TrimeSampleRecive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimeSampleRequest.resx">
+      <DependentUpon>TrimeSampleRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimeSuplierInformation.resx">
+      <DependentUpon>TrimeSuplierInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Trime\TrimeSuplierList.resx">
+      <DependentUpon>TrimeSuplierList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\Setting\Unite.resx">
+      <DependentUpon>Unite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\AddressReport.resx">
+      <DependentUpon>AddressReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rall.rdlc" />
+    <None Include="App.config" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GermentsDBDataSet.xsc">
+      <DependentUpon>GermentsDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GermentsDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GermentsDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GermentsDBDataSet.xss">
+      <DependentUpon>GermentsDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Standard-City-University.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Standard-City-School.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-item-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-item-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011_hand_share_palm_request_alms-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011_hand_share_palm_request_alms-1283.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011_hand_share_palm_request_alms-1284.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\industry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %282%291.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ecommerce_Icons_Rose_Color-23-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13871334-figure-supplier-push-hand-truck-with-gifts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company_building-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-04-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-folder-to-archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-event-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-folder-to-archive1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\__laptop._delete_trash-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-27-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-01-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\699311-icon-40-clipboard-list-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_folder-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Box_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
